@@ -10,7 +10,7 @@ abstract class Controller
 
     public function __construct()
     {
-        $this->config = new Config(CONFIG);
+        $this->config = Config::getInstance(CONFIG);
     }
 
     protected function view(string $path, array $params = null)

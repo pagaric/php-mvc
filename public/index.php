@@ -4,6 +4,10 @@
  * Import de l'autoloader
  */
 require __DIR__. '/../utils/autoloader.php';
+
+/**
+ * Import du fichier helpers
+ */
 require __DIR__. '/../utils/helpers.php';
 
 /**

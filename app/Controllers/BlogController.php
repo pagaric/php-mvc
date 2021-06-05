@@ -16,10 +16,10 @@ class BlogController extends Controller
         $post = new Post();
         $result = $post->getAll();
         $title = 'Tous les articles';
-
+        
         return $this->view('blog.index', compact('result', 'title'));
     }
-
+    
     public function show(int $id)
     {
         $post = new Post();

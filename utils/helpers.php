@@ -5,10 +5,32 @@ function sayHello()
     return 'Hello World !';
 }
 
-function dump($var, $die = true)
+function d($var)
 {
     echo '<pre>';
     var_dump($var);
     echo '</pre>';
-    if($die){die();}
+}
+
+function dd($var)
+{
+    echo '<pre>';
+    var_dump($var);
+    echo '</pre>';
+    die();
+}
+
+function r($var)
+{
+    echo '<pre>';
+    print_r($var);
+    echo '</pre>';
+}
+
+function rd($var)
+{
+    echo '<pre>';
+    print_r($var);
+    echo '</pre>';
+    die();
 }
